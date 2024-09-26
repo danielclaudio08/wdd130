@@ -28,11 +28,6 @@ aside {
     text-align: center;
 }
 
-aside p {
-    text-align: justify;
-    padding: 1rem;
-}
-
 aside img {
     width: 200px;
     height: auto;
@@ -50,7 +45,6 @@ main img {
 p {
     padding: 0;
     margin: 2rem;
-    text-align: justify;
 }
 
 footer {
