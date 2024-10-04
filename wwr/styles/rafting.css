@@ -67,7 +67,7 @@ nav a {
 
 .hero article {
     position: absolute; 
-    bottom: 92%; 
+    bottom: 10%; 
     left: 10%; 
     right: 10%; 
     background-color: var(--hero-bg-color); 
