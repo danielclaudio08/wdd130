@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
@@ -35,7 +35,7 @@ nav {
 }
 
 nav a {
-    font-family: "San-serif";
+    font-family: 'San-serif';
     color: var(--link-color);
     text-decoration: none;
     padding: 10px 15px;
@@ -53,7 +53,7 @@ nav a {
 
 .hero h1 {
     position: absolute;
-    font-family: "Noto Serif", serif;
+    font-family: 'Noto Serif', serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: 100;
@@ -67,7 +67,7 @@ nav a {
 
 .hero article {
     position: absolute; 
-    bottom: 10%; 
+    bottom: 91.6%; 
     left: 10%; 
     right: 10%; 
     background-color: var(--hero-bg-color); 
@@ -95,17 +95,14 @@ section h2 {
     font-size: 40px;
 }
 
-section h3 {
-    font-size: x-large;
-}
 
 section p {
-    font-size: 20px;
+    font-size: large;
 }
 
 footer {
     background: var(--footer-bg-color);
-    color: var(--link-color);
+    color: var(--accent1-color);
     text-align: center;
     padding: 10px 0;
 }
