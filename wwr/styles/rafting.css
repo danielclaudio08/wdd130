@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #066B9D; 
+    --secondary-color: #3FBCDE; 
+    --accent1-color: #FFBA0A; 
+    --accent2-color: #ADADAD; 
+    --font-color: #333333; 
+    --link-color: #ffffff; 
+    --footer-bg-color: #066B9D; 
+    --hero-bg-color: rgba(255, 186, 10, 0.8); 
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    max-width: 1200px; 
+    margin: auto; 
+    line-height: 1.6;
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--link-color);
+    padding: 10px 20px;
+}
+
+header img {
+    width: 80px; 
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    font-family: "San-serif";
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+}
+
+.hero h1 {
+    position: absolute;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: 100;
+    width: 100%;
+    text-align: center;
+    top: 0%;
+    background-color: var(--hero-bg-color);
+    color: var(--primary-color);
+    font-size: 50px;
+}
+
+.hero article {
+    position: absolute; 
+    bottom: 92%; 
+    left: 10%; 
+    right: 10%; 
+    background-color: var(--hero-bg-color); 
+    padding: 10px; 
+    border-radius: 10px; 
+}
+
+.hero article p {
+    margin: 0; 
+    color: var(--font-color); 
+}
+
+.hero article img {
+    float: right; 
+    margin-left: 15px; 
+    width: 150px; 
+    height: auto; 
+}
+
+section img {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 40px;
+}
+
+section h3 {
+    font-size: x-large;
+}
+
+section p {
+    font-size: 20px;
+}
+
+footer {
+    background: var(--footer-bg-color);
+    color: var(--link-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social.links a {
+    margin: 0 10px;
+    text-decoration: none;
+}
