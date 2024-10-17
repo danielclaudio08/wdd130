@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #eee;
+}
+
+legend {
+    padding: 0.5rem 1rem;
+    color: navy;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+label, input, button, select, textarea {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem auto;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 1em;
+    color: #333;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-item {
+    display: grid;
+    justify-content: center;
+    margin: 0.5rem;
+    grid-template-columns: 1fr;
+}
+
+label[for="feedback"] {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.column1 {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
