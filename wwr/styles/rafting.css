@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background: var(--secondary-color);
+    background: var(--footer-bg-color);
     padding: 1rem;
     border: 2px solid var(--font-color);
     height: 150px;
@@ -43,6 +43,7 @@ header {
     border-radius: 5px;
     margin-left: 20rem;
     margin-right: 3rem;
+    background-color: #ACE5E6;
 }
 
 .logo {
@@ -61,7 +62,7 @@ nav a:last-child {
 .header-container nav a {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color: #0F0F0F;
+    color: var(--footer-bg-color);
     text-decoration: none;
     padding: 10px 15px;
     flex-grow: 1;
@@ -70,7 +71,7 @@ nav a:last-child {
 }
 
 .header-container nav a:hover {
-    color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 .hero {
@@ -136,6 +137,197 @@ nav a:last-child {
     height: auto;
 }
 
+.company-info {
+    margin-top: 20px;
+    text-align: center;
+    border: 2px solid var(--font-color);
+    height: 240px;
+}
+
+.contact-box {
+    padding: 1.5rem;
+    border: 2px solid var(--font-color);
+    width: 450px;
+    margin: 0 auto;
+    background-color: var(--hero-bg-color);
+}
+
+.contact-box p {
+    text-align: left;
+    padding-left: 1rem;
+    margin: 5px;
+}
+
+.contact-box p strong {
+    font-weight: 700;
+}
+
+.contact-box a {
+    color: var(--font-color); 
+    text-decoration: none;  
+}
+
+.contact-box a:hover {
+    color: var(--primary-color);
+}
+
+.map iframe { 
+    width: 100%; 
+    height: 450px;
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    border-top: 2px solid var(--font-color);   
+}
+
+.map {
+    margin-top: 20px;
+    border: 2px solid var(--font-color);
+    width: 100%;
+    padding: 0;
+}
+
+.map h2 {
+    border: 2px solid var(--font-color);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 8px;
+    margin: 0 5px;
+}
+
+.team-grid .manager img {
+    width: 100%; 
+    max-width: 400px; 
+    max-height: 220px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.employees {
+    margin-top: 20px;
+    border: 2px solid var(--font-color);
+}
+
+.employees h2 {
+    border-radius: 10px;
+    border: 2px solid var(--font-color);
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+form {
+    display: grid;
+    place-items: center;
+    margin: 20px auto;
+    border: 2px solid var(--font-color);
+    width: 100%;
+    background-color: #F5F7FA;
+    padding: 1rem;
+    box-sizing: border-box;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.name-email {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form h2 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+    color: var(--font-color);
+}
+
+form label {
+    margin-bottom: 8px;
+    color: var(--font-color);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 20px;
+    color: var(--font-color);
+    gap: 20px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form button[type="submit"] {
+    display: block;
+    width: 150px;
+    padding: 12px;
+    background-color: var(--footer-bg-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--accent1-color);
+}
+
+
 .history-section {
     padding: 1rem;
     border: 2px solid var(--font-color);
@@ -188,13 +380,19 @@ nav a:last-child {
     margin-left: 5px;
 }
 
+.team-building img, .family-bonding img {
+    width: 100%; 
+    height: 105px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 figure {
     text-align: center; 
 }
 
 figure img {
     width: 100%; 
-    height: auto;
     border-radius: 10px; 
 }
 
@@ -204,32 +402,61 @@ footer {
     text-align: center;
     font-family: 'Noto Serif', serif;
     font-weight: 700;
-    padding: 10px 0;
+    height: 80px;
+    padding: 1rem 0; 
     border: 2px solid var(--font-color);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
     margin-bottom: 10px;
 }
 
-footer p {
-    margin: 0;
-    grid-column: 2;
+.footer-center {
+    display: grid;
+    flex-direction: column;
+    align-items: center; 
+    flex-grow: 1; 
+    margin: 0 auto; 
+    margin-left: 15rem;
+}
 
+.footer-center p {
+    margin: 5px 0; 
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-right {
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    margin: 0 auto;        
+}
+
+.footer-social {
+    margin-left: -17rem;
 }
 
 .social.links {
-    grid-column: 3;
-    display: flex;
-    align-content: space-around;
-    justify-content: right;
-    margin-right: 2rem;
+    display: flex; 
+    margin-right: 3rem;
 }
 
 .social.links a {
-    margin: 0 10px;
-    text-decoration: none;
-    padding: 0 10px 0 0;
+    margin: 0 10px; 
 }
-
-
