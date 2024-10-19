@@ -216,7 +216,7 @@ nav a:last-child {
     border: 2px solid var(--font-color);
 }
 
-.employees h2 {
+.employees h1 {
     border-radius: 10px;
     border: 2px solid var(--font-color);
     width: fit-content;
